@@ -1,0 +1,45 @@
+#welcome {
+    padding: 7em 0em;
+    background: linear-gradient(90deg, var(--accent) 33.3%, transparent 33.3%);
+
+    .container {
+        @include flexCenter;
+    }
+
+    h3 {
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+    h5 {
+        font-size: 1.35em;
+        font-weight: 700;
+    }
+    p {
+        color: var(--gray);
+        font-size: 1em;
+        &:first-of-type {
+            font-size: 1.4em;
+        }
+    }
+
+    img {
+        border: 10px white solid;
+    }
+
+    .side-text {
+        margin-left: 2em;
+
+        > * {
+            margin-top: 1em;
+        }
+
+        a {
+            display: inline-block;
+            padding: 1em 2em;
+            background-color: var(--accent);
+            color: white;
+            margin-top: 3em;
+            font-weight: 700;
+        }
+    }
+}

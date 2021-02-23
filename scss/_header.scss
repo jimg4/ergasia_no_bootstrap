@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    z-index: 9999;
+    border-bottom: var(--border);
+    transition: background-color 250ms ease-in-out;
+
+    .container {
+        @include flexCenter;
+    }
+}
+
+.logo {
+    font-size: 1.75em;
+    font-weight: 700;
+    color: white;
+    margin-right: auto;
+    transition: color 250ms ease-in-out;
+
+    span {
+        display: inline-block;
+    }
+}
+
+nav {
+    font-size: 1em;
+    @include flex-space-evenly;
+
+    a {
+        display: inline-block;
+        color: white;
+        padding: 1.5em 2em;
+        border-left: var(--border);
+        text-transform: uppercase;
+        transition: color 250ms ease-in-out;
+
+        &:last-of-type {
+            border-right: var(--border);
+        }
+    }
+}

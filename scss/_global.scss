@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #fff;
+    --mpez: #fff5ec;
+    --accent: #dc965a;
+    --black: #0f0a0a;
+    --gray: #5e6472;
+    --icon-bg: rgb(255, 245, 236);
+    --border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 86px;
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: var(--white);
+}
