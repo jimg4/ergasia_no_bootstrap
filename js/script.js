@@ -2,6 +2,7 @@ const header = document.querySelector(".header");
 const logo = document.querySelector(".logo");
 const navLinks = document.querySelectorAll(".header nav a");
 
+//change navbar bg and colors on scroll
 window.onscroll = () => {
     if (
         document.body.scrollTop >= 50 ||
@@ -9,14 +10,21 @@ window.onscroll = () => {
     ) {
         header.style.background = "white";
         logo.style.color = "black";
+
         navLinks.forEach((e) => {
             e.style.color = "black";
+            e.style.borderLeft = "1px solid rgba(15,10,10,0.1)";
         });
+
+        navLinks[navLinks.length - 1].style.borderRight =
+            "1px solid rgba(15,10,10,0.1)";
     } else {
         header.style.background = "";
         logo.style.color = "";
         navLinks.forEach((e) => {
             e.style.color = "";
+            e.style.borderLeft = "";
         });
+        navLinks[navLinks.length - 1].style.borderRight = "";
     }
 };

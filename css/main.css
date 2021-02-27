@@ -21,14 +21,12 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 86px;
   height: 100%;
   font-family: "Nunito", sans-serif;
 }
 
 body {
   height: 100%;
-  background-color: var(--white);
 }
 
 .header {
@@ -109,12 +107,13 @@ nav a:last-of-type {
 #hero h2 {
   color: var(--white);
   text-align: center;
+  display: block;
 }
 
 #hero h1 {
   font-size: 5rem;
   font-weight: 700;
-  margin: 1rem 0em;
+  margin: 1em 0em;
 }
 
 #hero h6 {
@@ -261,6 +260,88 @@ nav a:last-of-type {
   font-weight: 700;
 }
 
+#services {
+  padding: 7em 0em;
+  background-color: var(--mpez);
+}
+
+#services .services-header {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+#services .services-header > * + * {
+  margin-top: 1em;
+}
+
+#services h3 {
+  font-size: 2.8em;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  font-weight: 800;
+  position: relative;
+}
+
+#services h3::before {
+  content: "";
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background-color: var(--accent);
+}
+
+#services h5 {
+  font-size: 1.3em;
+}
+
+#services p {
+  color: var(--gray);
+  line-height: 30px;
+}
+
+.services-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3em;
+  gap: 2em;
+}
+
+.services__card {
+  background-color: var(--white);
+  padding: 2em;
+  width: calc(380px - 2em);
+  min-width: 265px;
+  -webkit-box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.services__card i {
+  font-size: 50px;
+  color: var(--accent);
+}
+
+.services__card > * {
+  margin: 1em 0;
+}
+
+html {
+  scroll-padding-top: 70px;
+  line-height: 140%;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -279,5 +360,25 @@ h5 {
 a {
   text-decoration: none;
   color: var(--black);
+}
+
+#footer {
+  background-color: var(--black);
+}
+
+#footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 0;
+  color: white;
+}
+
+#footer .icons i {
+  color: white;
+  margin-right: 1em;
 }
 /*# sourceMappingURL=main.css.map */

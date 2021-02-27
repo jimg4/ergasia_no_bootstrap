@@ -1,0 +1,15 @@
+#footer {
+    background-color: var(--black);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 0;
+        color: white;
+    }
+
+    .icons i {
+        color: white;
+        margin-right: 1em;
+    }
+}
