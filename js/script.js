@@ -1,4 +1,8 @@
 const header = document.querySelector(".header");
+const hero = document.querySelector("#hero");
+const welcome = document.querySelector("#welcome");
+const services = document.querySelector("#services");
+const skills = document.querySelector("#skills");
 const logo = document.querySelector(".logo");
 const navLinks = document.querySelectorAll(".header nav a");
 
@@ -28,5 +32,21 @@ window.onscroll = () => {
             e.style.borderLeft = "";
         });
         navLinks[navLinks.length - 1].style.borderRight = "";
+    }
+};
+
+//change nav link color when mouse is on section
+const highlight = (e) => {
+    e.style.setProperty("color", "#dc965a", "important");
+};
+
+const highlightReset = (e) => {
+    if (
+        document.body.scrollTop >= 50 ||
+        document.documentElement.scrollTop > 50
+    ) {
+        e.style.setProperty("color", "#0f0a0a", "important");
+    } else {
+        e.style.setProperty("color", "", "important");
     }
 };
