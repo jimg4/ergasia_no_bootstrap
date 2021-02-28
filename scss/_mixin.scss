@@ -9,3 +9,38 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin seperator-middle {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 200%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 3px;
+        background-color: var(--accent);
+    }
+}
+
+@mixin seperator-left {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 200%;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: var(--accent);
+    }
+}

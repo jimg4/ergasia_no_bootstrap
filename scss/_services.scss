@@ -17,18 +17,7 @@
         margin-bottom: 1em;
         text-transform: capitalize;
         font-weight: 800;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 200%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 40px;
-            height: 3px;
-            background-color: var(--accent);
-        }
+        @include seperator-middle;
     }
 
     h5 {
@@ -42,9 +31,7 @@
 }
 
 .services-cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include flex-between;
     flex-wrap: wrap;
     margin-top: 3em;
     gap: 2em;

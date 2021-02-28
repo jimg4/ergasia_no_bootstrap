@@ -4,6 +4,8 @@
 @import "hero";
 @import "welcome";
 @import "services";
+@import "skills";
+@import "footer";
 
 html {
     scroll-padding-top: 70px;
@@ -29,5 +31,3 @@ a {
     text-decoration: none;
     color: var(--black);
 }
-
-@import "./footer";

@@ -9,6 +9,7 @@ window.onscroll = () => {
         document.documentElement.scrollTop > 50
     ) {
         header.style.background = "white";
+        header.style.boxShadow = "0px 5px 50px -12px rgba(0, 0, 0, 0.25)";
         logo.style.color = "black";
 
         navLinks.forEach((e) => {
@@ -20,6 +21,7 @@ window.onscroll = () => {
             "1px solid rgba(15,10,10,0.1)";
     } else {
         header.style.background = "";
+        header.style.boxShadow = "";
         logo.style.color = "";
         navLinks.forEach((e) => {
             e.style.color = "";
