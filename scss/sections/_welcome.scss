@@ -1,5 +1,19 @@
+@use "../mixins" as *;
+
 #welcome {
     padding: 7em 0em;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(33.3%, var(--accent)),
+        color-stop(33.3%, transparent)
+    );
+    background: -o-linear-gradient(
+        left,
+        var(--accent) 33.3%,
+        transparent 33.3%
+    );
     background: linear-gradient(90deg, var(--accent) 33.3%, transparent 33.3%);
 
     .container {

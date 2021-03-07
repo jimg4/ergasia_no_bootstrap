@@ -1,12 +1,5 @@
-@import "global";
-@import "mixin";
-@import "header";
-@import "hero";
-@import "welcome";
-@import "services";
-@import "skills";
-@import "footer";
-
+@use "./global";
+@use "./sections/index";
 html {
     scroll-padding-top: 70px;
     line-height: 140%;

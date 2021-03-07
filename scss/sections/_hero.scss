@@ -1,5 +1,16 @@
+@use "../mixins" as *;
 #hero {
     height: 100vh;
+    background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.6)),
+            to(rgba(0, 0, 0, 0.6))
+        ),
+        url(../assets/img/hero.jpg);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../assets/img/hero.jpg);
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url(../assets/img/hero.jpg);
     background-size: cover;
@@ -50,6 +61,8 @@
 
         &:hover {
             background-color: var(--black);
+            -webkit-transition: all 250ms ease-in-out;
+            -o-transition: all 250ms ease-in-out;
             transition: all 250ms ease-in-out;
 
             i {
@@ -60,6 +73,9 @@
 
     .container {
         @include flexCenter;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         height: 100%;
     }

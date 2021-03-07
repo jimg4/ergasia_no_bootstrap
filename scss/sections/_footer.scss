@@ -2,7 +2,11 @@
     background-color: var(--black);
 
     .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 1em 0;
         color: white;

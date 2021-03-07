@@ -1,8 +1,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
@@ -18,8 +17,7 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   height: 100%;
   font-family: "Nunito", sans-serif;
@@ -36,19 +34,19 @@ body {
   z-index: 9999;
   border-bottom: var(--border);
   -webkit-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
   transition: background-color 250ms ease-in-out;
 }
-
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logo {
@@ -57,9 +55,9 @@ body {
   color: white;
   margin-right: auto;
   -webkit-transition: color 250ms ease-in-out;
+  -o-transition: color 250ms ease-in-out;
   transition: color 250ms ease-in-out;
 }
-
 .logo span {
   display: inline-block;
 }
@@ -70,13 +68,12 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-
 nav a {
   display: inline-block;
   color: white;
@@ -84,13 +81,12 @@ nav a {
   border-left: var(--border);
   text-transform: uppercase;
   -webkit-transition: color 250ms ease-in-out;
+  -o-transition: color 250ms ease-in-out;
   transition: color 250ms ease-in-out;
 }
-
 nav a:last-of-type {
   border-right: var(--border);
 }
-
 nav a:hover {
   color: var(--accent) !important;
 }
@@ -98,6 +94,7 @@ nav a:hover {
 #hero {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../assets/img/hero.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/hero.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,7 +102,6 @@ nav a:hover {
   position: relative;
   overflow: hidden;
 }
-
 #hero h6,
 #hero h1,
 #hero h2 {
@@ -113,80 +109,73 @@ nav a:hover {
   text-align: center;
   display: block;
 }
-
 #hero h1 {
   font-size: 5rem;
   font-weight: 700;
   margin: 1em 0em;
 }
-
 #hero h6 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-
 #hero h2 {
   font-size: 2.25rem;
   font-weight: 500;
 }
-
 #hero .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   right: 2em;
   bottom: 1em;
   z-index: 9;
 }
-
 #hero a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
   background-color: var(--icon-bg);
   margin-right: 1em;
 }
-
 #hero a:hover {
   background-color: var(--black);
   -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
-
 #hero a:hover i {
   color: white;
 }
-
 #hero .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -209,52 +198,44 @@ nav a:hover {
 #welcome {
   padding: 7em 0em;
   background: -webkit-gradient(linear, left top, right top, color-stop(33.3%, var(--accent)), color-stop(33.3%, transparent));
+  background: -o-linear-gradient(left, var(--accent) 33.3%, transparent 33.3%);
   background: linear-gradient(90deg, var(--accent) 33.3%, transparent 33.3%);
 }
-
 #welcome .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-
 #welcome h3 {
   font-size: 2.5em;
   font-weight: 700;
 }
-
 #welcome h5 {
   font-size: 1.35em;
   font-weight: 700;
 }
-
 #welcome p {
   color: var(--gray);
   font-size: 1em;
 }
-
 #welcome p:first-of-type {
   font-size: 1.4em;
 }
-
 #welcome img {
   border: 10px white solid;
 }
-
 #welcome .side-text {
   margin-left: 2em;
 }
-
 #welcome .side-text > * {
   margin-top: 1em;
 }
-
 #welcome .side-text a {
   display: inline-block;
   padding: 1em 2em;
@@ -268,17 +249,14 @@ nav a:hover {
   padding: 7em 0em;
   background-color: var(--mpez);
 }
-
 #services .services-header {
   margin: 0 auto;
   text-align: center;
   width: 50%;
 }
-
 #services .services-header > * + * {
   margin-top: 1em;
 }
-
 #services h3 {
   font-size: 2.8em;
   margin-bottom: 1em;
@@ -286,23 +264,21 @@ nav a:hover {
   font-weight: 800;
   position: relative;
 }
-
 #services h3::before {
   content: "";
   position: absolute;
   top: 200%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 40px;
   height: 3px;
   background-color: var(--accent);
 }
-
 #services h5 {
   font-size: 1.3em;
 }
-
 #services p {
   color: var(--gray);
   line-height: 30px;
@@ -313,13 +289,13 @@ nav a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 3em;
   gap: 2em;
 }
@@ -330,14 +306,12 @@ nav a:hover {
   width: calc(380px - 2em);
   min-width: 265px;
   -webkit-box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
-
 .services__card i {
   font-size: 50px;
   color: var(--accent);
 }
-
 .services__card > * {
   margin: 1em 0;
 }
@@ -347,21 +321,19 @@ nav a:hover {
   margin: 1em 0em;
   font-weight: 600;
 }
-
 .skills p {
   color: rgba(255, 255, 255, 0.8);
 }
-
 .skills .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 2em;
 }
 
@@ -371,25 +343,23 @@ nav a:hover {
   min-width: 265px;
   background-color: var(--accent);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   padding: 0.75em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
-
 .skills__card__section {
   color: white;
   padding: 1em;
 }
-
 .skills__card__section span {
   font-size: 12px;
   padding: 4px 12px;
@@ -397,11 +367,9 @@ nav a:hover {
   color: var(--white);
   border-radius: 30px;
 }
-
 .skills__card-dark {
   background-color: var(--black);
 }
-
 .skills__card-dark span {
   background-color: var(--accent);
 }
@@ -416,16 +384,14 @@ nav a:hover {
   background-color: var(--black);
   position: relative;
 }
-
 .skill-bar span {
   padding: 0.5em 0.5em 1.5em 0.5em;
   border-radius: 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 69%, 0 69%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 69%, 0 69%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 69%, 0 69%);
   position: absolute;
   top: -450%;
 }
-
 .skill-bar::before {
   content: "";
   position: absolute;
@@ -435,7 +401,6 @@ nav a:hover {
 .skills__card__section:nth-of-type(1) .skill-bar span {
   left: calc(92% - 3.1em);
 }
-
 .skills__card__section:nth-of-type(1) .skill-bar::before {
   width: 92%;
   background-color: var(--accent);
@@ -444,7 +409,6 @@ nav a:hover {
 .skills__card__section:nth-of-type(2) .skill-bar span {
   left: calc(75% - 3.1em);
 }
-
 .skills__card__section:nth-of-type(2) .skill-bar::before {
   width: 75%;
   background-color: var(--accent);
@@ -453,7 +417,6 @@ nav a:hover {
 .skills__card__section:nth-of-type(3) .skill-bar span {
   left: calc(86% - 3.1em);
 }
-
 .skills__card__section:nth-of-type(3) .skill-bar::before {
   width: 86%;
   background-color: var(--accent);
@@ -462,7 +425,6 @@ nav a:hover {
 .skills__card__section:nth-of-type(4) .skill-bar span {
   left: calc(88% - 3.1em);
 }
-
 .skills__card__section:nth-of-type(4) .skill-bar::before {
   width: 88%;
   background-color: var(--accent);
@@ -471,7 +433,6 @@ nav a:hover {
 .skills__card__section:nth-of-type(5) .skill-bar span {
   left: calc(92% - 3.1em);
 }
-
 .skills__card__section:nth-of-type(5) .skill-bar::before {
   width: 92%;
   background-color: var(--accent);
@@ -481,13 +442,11 @@ nav a:hover {
   margin: 7em 0em;
   padding: 1em;
 }
-
 .box h4 {
   font-size: 1.5em;
   margin-bottom: 2em;
   position: relative;
 }
-
 .box h4::before {
   content: "";
   position: absolute;
@@ -503,7 +462,6 @@ nav a:hover {
   padding: 0;
   border: none;
 }
-
 .skill-bars .skills__card__section:last-of-type {
   margin-bottom: 1em;
 }
@@ -511,7 +469,6 @@ nav a:hover {
 .skill-bars {
   background-color: var(--mpez);
 }
-
 .skill-bars h6 {
   font-size: 1em;
   color: var(--black);
@@ -520,18 +477,16 @@ nav a:hover {
 #footer {
   background-color: var(--black);
 }
-
 #footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1em 0;
   color: white;
 }
-
 #footer .icons i {
   color: white;
   margin-right: 1em;
@@ -561,4 +516,5 @@ a {
   text-decoration: none;
   color: var(--black);
 }
+
 /*# sourceMappingURL=main.css.map */

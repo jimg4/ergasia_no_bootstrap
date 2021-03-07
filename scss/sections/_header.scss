@@ -1,9 +1,12 @@
+@use "../mixins/index" as *;
 .header {
     position: fixed;
     width: 100%;
     background-color: transparent;
     z-index: 9999;
     border-bottom: var(--border);
+    -webkit-transition: background-color 250ms ease-in-out;
+    -o-transition: background-color 250ms ease-in-out;
     transition: background-color 250ms ease-in-out;
 
     .container {
@@ -16,6 +19,8 @@
     font-weight: 700;
     color: white;
     margin-right: auto;
+    -webkit-transition: color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out;
     transition: color 250ms ease-in-out;
 
     span {
@@ -33,6 +38,8 @@ nav {
         padding: 1.5em 2em;
         border-left: var(--border);
         text-transform: uppercase;
+        -webkit-transition: color 250ms ease-in-out;
+        -o-transition: color 250ms ease-in-out;
         transition: color 250ms ease-in-out;
 
         &:last-of-type {

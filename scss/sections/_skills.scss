@@ -1,3 +1,4 @@
+@use "../mixins/index" as *;
 .skills {
     h6 {
         font-size: 1.125em;
@@ -20,11 +21,21 @@
     height: 420px;
     min-width: 265px;
     background-color: var(--accent);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     padding: 0.75em;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     &__section {
@@ -61,6 +72,7 @@
     span {
         padding: 0.5em 0.5em 1.5em 0.5em;
         border-radius: 0;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 69%, 0 69%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 69%, 0 69%);
         position: absolute;
         top: -450%;
